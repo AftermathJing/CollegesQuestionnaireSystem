@@ -19,11 +19,14 @@ const fetchProjectInfo = (id) => {
         contentType: "application/json",
         success(res) {
             let info = res.data[0]
+            info.creationDate = res.data[0].creationDate;
+            const creationDate = new Date(info.creationDate);
+            const startStr = `${creationDate.getFullYear()}-${creationDate.getMonth() + 1}-${creationDate.getDate()} ${creationDate.getHours()}:${creationDate.getMinutes()}:${creationDate.getSeconds()}`;
             console.log(info, 'res')
             $('#projectName').text(info.projectName)
-            $('#createTime').text(info.createTime)
+            $('#createTime').text(startStr)
             $('#projectDescription').text(info.projectContent)
-            $('#personInCharge').text(info.personInCharge)
+            $('#personInCharge').text(info.createdBy)
         }
     })
 }
