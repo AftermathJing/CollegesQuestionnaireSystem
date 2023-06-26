@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>问卷设计</title>
+    <link rel="stylesheet" href="./modules/modifyTitleModal/index.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../../static/bootstrap-3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/iconfont/iconfont.css">
+    <script src="../../static/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <script src="../../static/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="questionnaire-title">
+      <span id="qnnreTitle" onclick="handleModifyTitle()" style="cursor: pointer;">
+        问卷标题
+      </span>
+    </div>
+    <div class="questionnaire-description" style="display: flex; justify-content: space-between;">
+        <span id="qnnreDescription" onclick="handleModifyTitle()" style="cursor: pointer; flex: 1;">问卷说明</span>
+        <span onclick="handleModifyTitle()" style="cursor: pointer; flex: 1; text-align: right">
+        答卷人：<span id="respondentName"></span></span>
+    </div>
+    <div class="problem" id="problem"></div>
+</div>
+
+<!-- 修改标题弹窗 -->
+<div id="modifyTitle"></div>
+
+<script type="module" src="../../utils/index.js"></script>
+<script src="./modules/modifyTitleModal/index.js"></script>
+<script src="./index.js"></script>
+<script>
+    $("#modifyTitle").load("./modules/modifyTitleModal/index.html")
+</script>
+</body>
+</html>
