@@ -538,7 +538,7 @@ const handleModifyTitle = () => {
 /**
 
  handleEditFinish函数用于编辑完问卷后保存问卷信息
- @author AkagawaTsurunaki
+ @author aftermarhjing
  @returns {void} */
 const handleEditFinish = () => {
 

@@ -82,7 +82,7 @@ const load = () => {
 /**
  * 增加一个单选题(已作答)
  * @param questionDTO
- * @author AkagawaTsurunaki
+ * @author aftermarhjing
  */
 const singleChoice = (questionDTO) => {
     let question = questionDTO.question
@@ -111,7 +111,7 @@ const singleChoice = (questionDTO) => {
 
 /**
  * 增加多选
- * @author AkagawaTsurunaki
+ * @author aftermarhjing
  *
  */
 const singleMultiple = (questionDTO) => {

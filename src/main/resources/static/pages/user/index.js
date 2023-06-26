@@ -23,13 +23,23 @@ const fetchUserList = () => {
       $('#table #tbody').html('')
       userList = res.data
       res.data.map((item, index) => {
+        // 将日期字符串转换为 Date 对象
+        const startDate = new Date(item.startTime)
+        const stopDate = new Date(item.stopTime)
+        item.startTime = startDate
+        item.stopTime = stopDate
+
+        // 格式化日期为需要的格式
+        const startStr = `${startDate.getFullYear()}-${startDate.getMonth() + 1}-${startDate.getDate()} ${startDate.getHours()}:${startDate.getMinutes()}:${startDate.getSeconds()}`
+        const stopStr = `${stopDate.getFullYear()}-${stopDate.getMonth() + 1}-${stopDate.getDate()} ${stopDate.getHours()}:${stopDate.getMinutes()}:${stopDate.getSeconds()}`
+
         $('#table #tbody').append(`
           <tr>
             <td>${index + 1}</td>
             <td>${item.username}</td>
             <td>${item.password}</td>
-            <td>${item.startTime}</td>
-            <td>${item.stopTime}</td>
+            <td>${startStr}</td>
+            <td>${stopStr}</td>
             <td>
               <button type="button" class="btn btn-link">重置密码</button>
               <button type="button" class="btn btn-link" onclick="handleEdit('${item.id}')">编辑</button>

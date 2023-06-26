@@ -9,4 +9,4 @@ spring:
         driver-class-name: com.mysql.cj.jdbc.Driver
 
 mybatis:
-    type-aliases-package: com.github.akagawatsurunaki.ankeito.entity
+    type-aliases-package: com.github.aftermathjing.questionnaire.entity

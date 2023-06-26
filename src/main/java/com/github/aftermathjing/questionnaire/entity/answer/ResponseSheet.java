@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * 答题卡实体类
  *
- * @author AkagawaTsurunaki
+ * @author aftermarhjing
  */
 @Data
 @AllArgsConstructor

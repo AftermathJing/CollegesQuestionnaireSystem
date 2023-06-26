@@ -100,7 +100,7 @@ public class StatisticService {
      * "一团乱麻"来形容。原因是这段代码的逻辑非常复杂，嵌套了多层的流式操作和操作链，使得代码的可读性变差，
      * 很难一眼看清楚整个代码的执行过程。这种复杂的代码结构容易引发错误和难以维护。
      * 因此，对于这样的代码，建议进行重构，将其拆解成更小、更清晰、更可读的功能块，提高代码的可维护性和可读性。
-     * @AkagawaTsurunaki说 2023年6月24日 2:20 它成功运行了, 而且效果不错!
+     * @aftermarhjing说 2023年6月24日 2:20 它成功运行了, 而且效果不错!
      */
     private ServiceResult<List<QuestionStatisticDTO>> getSameQuestionsStatistic(@NonNull QueryProjectParam queryProjectParam) {
         try {

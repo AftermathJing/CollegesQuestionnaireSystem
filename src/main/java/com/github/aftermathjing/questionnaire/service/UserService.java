@@ -57,6 +57,11 @@ public class UserService {
                 allUsers);
     }
 
+    /**
+     * 根据用户名查询用户
+     *
+     * @return 服务响应结果
+     */
     public ServiceResult<User> getUserByUsername(@NonNull String username) {
         return Optional.ofNullable(userMapper.selectByUsername(username)).map(
                 it -> ServiceResult.ofOK("根据名称" + username + "查询到 1 条用户信息", it)

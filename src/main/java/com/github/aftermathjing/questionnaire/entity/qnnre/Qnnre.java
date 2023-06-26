@@ -14,7 +14,7 @@ import java.util.Date;
 /**
  * 问卷实体类
  *
- * @author AkagawaTsurunaki
+ * @author aftermarhjing
  */
 @Data
 @Builder

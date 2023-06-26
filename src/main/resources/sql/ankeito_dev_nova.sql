@@ -5,7 +5,7 @@
  Source Server Type    : MySQL
  Source Server Version : 80029
  Source Host           : localhost:3306
- Source Schema         : ankeito_dev
+ Source Schema         : questionnaire_dev
 
  Target Server Type    : MySQL
  Target Server Version : 80029
@@ -80,8 +80,8 @@ CREATE TABLE `project`  (
 -- ----------------------------
 -- Records of project
 -- ----------------------------
-INSERT INTO `project` VALUES ('448ce5a6-4aaf-4b58-9e81-dede5918737e', 'TODO', '你是人类吗？', '本次调查目的在于调查参与者是否为人类。', 'AkagawaTsurunaki', 'AkagawaTsurunaki', '2023-06-23 15:47:41', '2023-06-23 15:47:41');
-INSERT INTO `project` VALUES ('c955cebf-36b5-4dfa-82cf-d4115a933e09', 'TODO', '如来真来了吗?', '中国人认为宇宙万法...', 'AkagawaTsurunaki', 'AkagawaTsurunaki', '2023-06-23 15:31:49', '2023-06-23 15:31:49');
+INSERT INTO `project` VALUES ('448ce5a6-4aaf-4b58-9e81-dede5918737e', 'TODO', '你是人类吗？', '本次调查目的在于调查参与者是否为人类。', 'aftermarhjing', 'aftermarhjing', '2023-06-23 15:47:41', '2023-06-23 15:47:41');
+INSERT INTO `project` VALUES ('c955cebf-36b5-4dfa-82cf-d4115a933e09', 'TODO', '如来真来了吗?', '中国人认为宇宙万法...', 'aftermarhjing', 'aftermarhjing', '2023-06-23 15:31:49', '2023-06-23 15:31:49');
 
 -- ----------------------------
 -- Table structure for qnnre
@@ -272,6 +272,6 @@ CREATE TABLE `user`  (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES ('d87fe3a4-a2b4-1144-2d93-6f2ff968c8f1', 'AkagawaTsurunaki', '0', '2023-06-23 15:30:46', '2023-06-30 15:30:49', 'ADMIN', 'ENABLE', NULL, NULL, NULL, NULL);
+INSERT INTO `user` VALUES ('d87fe3a4-a2b4-1144-2d93-6f2ff968c8f1', 'aftermarhjing', '0', '2023-06-23 15:30:46', '2023-06-30 15:30:49', 'ADMIN', 'ENABLE', NULL, NULL, NULL, NULL);
 
 SET FOREIGN_KEY_CHECKS = 1;

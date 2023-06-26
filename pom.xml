@@ -8,11 +8,11 @@
 		<version>3.1.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.github.akagawatsurunaki</groupId>
-	<artifactId>ankeito</artifactId>
+	<groupId>com.github.aftermarhjing</groupId>
+	<artifactId>questionnaire</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ankeito</name>
-	<description>2022年东北大学软件学院软件系统开发实训《高校满意度调查问卷》系统——Ankeito</description>
+	<name>CollegesQuestionnaireSystem</name>
+	<description>东北大学软件学院2021届大二软件系统开发实训"高校满意度调查问卷系统"——CollegesQuestionnaireSystem</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -93,8 +93,8 @@
 						<!-- exclude the test classes -->
 						<exclude>**/*Test.class</exclude>
 						<!-- exclude the target package -->
-						<exclude>com/github/akagawatsurunaki/ankeito/entity/**</exclude>
-						<exclude>com/github/akagawatsurunaki/ankeito/api/**</exclude>
+						<exclude>com/github/aftermarhjing/questionnaire/entity/**</exclude>
+						<exclude>com/github/aftermarhjing/questionnaire/api/**</exclude>
 					</excludes>
 				</configuration>
 
