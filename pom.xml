@@ -95,6 +95,9 @@
 						<!-- exclude the target package -->
 						<exclude>com/github/aftermarhjing/questionnaire/entity/**</exclude>
 						<exclude>com/github/aftermarhjing/questionnaire/api/**</exclude>
+						<exclude>com/github/aftermarhjing/questionnaire/common/**</exclude>
+						<exclude>com/github/aftermarhjing/questionnaire/config/**</exclude>
+						<exclude>com/github/aftermarhjing/questionnaire/mapper/**</exclude>
 					</excludes>
 				</configuration>
 
