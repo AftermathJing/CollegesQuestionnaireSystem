@@ -96,11 +96,6 @@ public class StatisticService {
      * @param queryProjectParam 查询项目参数对象，包含项目ID。
      * @return 返回一个ServiceResult对象，其中包含了统计结果。如果成功，则ServiceResult的结果状态为OK，并且携带了统计信息；否则，返回错误信息。
      * @note 注意，请不要随意更改这段代码，除非你知道你在做什么
-     * @ChatGPT说 这段代码可以用成语
-     * "一团乱麻"来形容。原因是这段代码的逻辑非常复杂，嵌套了多层的流式操作和操作链，使得代码的可读性变差，
-     * 很难一眼看清楚整个代码的执行过程。这种复杂的代码结构容易引发错误和难以维护。
-     * 因此，对于这样的代码，建议进行重构，将其拆解成更小、更清晰、更可读的功能块，提高代码的可维护性和可读性。
-     * @aftermarhjing说 2023年6月24日 2:20 它成功运行了, 而且效果不错!
      */
     private ServiceResult<List<QuestionStatisticDTO>> getSameQuestionsStatistic(@NonNull QueryProjectParam queryProjectParam) {
         try {
