@@ -1,8 +1,10 @@
 package com.github.aftermathjing.questionnaire.api.param.query;
 
 import lombok.Data;
+import lombok.extern.jackson.Jacksonized;
 
 @Data
+@Jacksonized
 public class QueryQnnreListParam {
     /**
      * 当使用id查询时, 通常只会返回一个对象

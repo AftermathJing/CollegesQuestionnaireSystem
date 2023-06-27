@@ -7,6 +7,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.extern.jackson.Jacksonized;
+import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 
@@ -18,6 +20,7 @@ import java.util.Date;
  */
 @Data
 @Builder
+@Jacksonized
 @AllArgsConstructor
 @NoArgsConstructor
 public class Qnnre {

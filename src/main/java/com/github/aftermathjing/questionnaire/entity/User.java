@@ -4,6 +4,7 @@ import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.github.aftermathjing.questionnaire.common.enumeration.UserRole;
 import com.github.aftermathjing.questionnaire.common.enumeration.UserStatus;
 import lombok.*;
+import lombok.extern.jackson.Jacksonized;
 
 import java.util.Date;
 
@@ -12,6 +13,7 @@ import java.util.Date;
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = false)
 @Builder
+@Jacksonized
 public class User extends Model<User> {
 
     /**
