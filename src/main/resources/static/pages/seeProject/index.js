@@ -54,11 +54,15 @@ const fetchQnnreInfo = (selectedProjectId) => {
 const addRow = (index, qnnre) => {
     let tbody = $('table > tbody');
 
+    // 日期格式化
+    const startDate = new Date(qnnre.startTime)
+    const startStr = `${startDate.getFullYear()}-${startDate.getMonth() + 1}-${startDate.getDate()} ${startDate.getHours()}:${startDate.getMinutes()}:${startDate.getSeconds()}`
+
     let ele = `
     <tr>
         <td>${index}</td>
         <td>${qnnre.name}</td>
-        <td>${qnnre.startTime}</td>
+        <td>${startStr}</td>
         <td>
             <button type="button" class="btn btn-link" onclick="handlePreviewQnnre('${qnnre.id}')">预览</button>
             <button type="button" class="btn btn-link" onclick="handlePublishQnnre('${qnnre.id}')">发布</button>
